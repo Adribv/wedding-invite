@@ -1,8 +1,8 @@
 import { createServer } from "node:http";
 import { createServerAdapter } from "@whatwg-node/server";
-import { server } from "./dist/server/server.js";
+import handler from "./dist/server/server.js";
 
-const adapter = createServerAdapter(server.fetch.bind(server));
+const adapter = createServerAdapter(handler.fetch.bind(handler));
 
 const PORT = process.env.PORT || 10000;
 
