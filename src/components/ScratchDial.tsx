@@ -56,7 +56,7 @@ export function ScratchDial({ value, label, size = 96, onReveal }: ScratchDialPr
     ctx.font = `600 ${Math.round(size * 0.085)}px Inter, sans-serif`;
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
-    ctx.fillText("RUB", size / 2, size / 2);
+    ctx.fillText("", size / 2, size / 2);
 
     ctx.globalCompositeOperation = "destination-out";
   }, [size]);
